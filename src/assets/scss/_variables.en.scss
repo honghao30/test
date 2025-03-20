@@ -1,0 +1,649 @@
+/*************** viewpoint ***************/
+
+$breakpoint-1024: 1024px;
+$breakpoint-960: 960px;
+$breakpoint-762: 762px;
+$breakpoint-480: 480px;
+
+@mixin en-desktop {
+  @media only screen and (min-width: #{$breakpoint-1024}) {
+    .hidden-desktop {
+      display: none !important;
+    }
+    @content;
+  }
+}
+
+@mixin en-tablet-big {
+  @media only screen and (min-width: #{$breakpoint-960}) and (max-width: #{$breakpoint-1024 - 0.1px}) {
+    @content;
+  }
+}
+
+@mixin en-tablet-small {
+  @media only screen and (min-width: #{$breakpoint-762}) and (max-width: #{$breakpoint-960 - 0.1px}) {
+    @content;
+  }
+}
+
+@mixin en-mobile {
+  @media only screen and (max-width: #{$breakpoint-762 - 0.1px}) {
+    .hidden-mobile {
+      display: none !important;
+    }
+    @content;
+  }
+}
+
+@mixin en-tablet {
+  @media only screen and (min-width: #{$breakpoint-762}) and (max-width: #{$breakpoint-1024 - 0.1px} ) {
+    .hidden-tablet {
+      display: none !important;
+    }
+    @content;
+  }
+}
+
+@mixin mobile-banner-small {
+  @media only screen and (min-width: 514px) and (max-width: 761.9px) {
+    @content;
+  }
+}
+
+@mixin mobile-banner-large {
+  @media only screen and (max-width: 560px) {
+    @content;
+  }
+}
+
+.only-en-desktop {
+  @include en-tablet-big {
+    display: none !important;
+  }
+  @include en-tablet-small {
+    display: none !important;
+  }
+  @include en-mobile {
+    display: none !important;
+  }
+}
+.only-en-tablet {
+  @include en-desktop {
+    display: none !important;
+  }
+  @include en-mobile {
+    display: none !important;
+  }
+}
+.only-en-tablet-big {
+  @include en-desktop {
+    display: none !important;
+  }
+  @include en-tablet-small {
+    display: none !important;
+  }
+  @include en-mobile {
+    display: none !important;
+  }
+}
+.only-en-tablet-small {
+  @include en-tablet-small {
+    display: none !important;
+  }
+}
+.only-en-mobile {
+  @include en-mobile {
+    display: none !important;
+  }
+}
+.hidden-en-desktop {
+  @include en-desktop {
+    display: none !important;
+  }
+}
+.hidden-en-tablet {
+  @include en-tablet {
+    display: none !important;
+  }
+}
+.hidden-en-tablet-big {
+  @include en-tablet-big {
+    display: none !important;
+  }
+}
+.hidden-en-tablet-small {
+  @include en-tablet-small {
+    display: none !important;
+  }
+}
+.hidden-en-mobile {
+  @include en-mobile {
+    display: none !important;
+  }
+}
+/*************** layouts ***************/
+
+@mixin grid($flag: true) {
+  margin: 0px auto;
+  @include en-desktop {
+    width: 1200px;
+    padding: 0px 20px;
+    display: grid;
+    grid-template-columns: repeat(12, 60px);
+    column-gap: 40px;
+    @if $flag {
+    } @else {
+      padding: 0;
+    }
+  }
+  @include en-tablet-big {
+    width: 960px;
+    padding: 0px 10px;
+    display: grid;
+    grid-template-columns: repeat(12, 60px);
+    column-gap: 20px;
+    @if $flag {
+    } @else {
+      padding: 0;
+    }
+  }
+  @include en-tablet-small {
+    width: 640px;
+    padding: 0px 10px;
+    display: grid;
+    grid-template-columns: repeat(8, 60px);
+    column-gap: 20px;
+    @if $flag {
+    } @else {
+      padding: 0;
+    }
+  }
+  @include en-mobile {
+    width: 480px;
+    padding: 0px 10px;
+    display: grid;
+    grid-template-columns: repeat(6, 60px);
+    column-gap: 20px;
+    @if $flag {
+    } @else {
+      padding: 0;
+    }
+  }
+}
+@mixin container {
+  @include en-desktop {
+    width: 1200px;
+    margin: 0px auto;
+    padding: 0px 20px;
+    padding-top: 80px;
+  }
+  @include en-tablet-big {
+    width: 960px;
+    margin: 0px auto;
+    padding: 0px 10px;
+  }
+  @include en-tablet-small {
+    width: 640px;
+    margin: 0px auto;
+    padding: 0px 10px;
+  }
+  @include en-mobile {
+    width: 100%;
+    padding: 0px 10px;
+  }
+}
+
+@mixin container-no-top-padding {
+  @include en-desktop {
+    width: 1200px;
+    margin: 0px auto;
+    padding: 0px 20px;
+  }
+  @include en-tablet-big {
+    width: 960px;
+    margin: 0px auto;
+    padding: 0px 10px;
+  }
+  @include en-tablet-small {
+    width: 640px;
+    margin: 0px auto;
+    padding: 0px 10px;
+  }
+  @include en-mobile {
+    width: 100%;
+    padding: 0px 10px;
+  }
+}
+
+/*************** keyframes ***************/
+@keyframes move-up-down {
+  0% {
+    padding-top: 10px;
+  }
+  50% {
+    padding-top: 0px;
+  }
+  100% {
+    padding-top: 10px;
+  }
+}
+
+/*************** typography ***************/
+@mixin text-headline-1 {
+  @include en-desktop {
+    @include bold(56);
+    line-height: 110%;
+  }
+  @include en-tablet {
+    @include bold(48);
+    line-height: 110%;
+  }
+  @include en-mobile {
+    @include bold(24);
+    line-height: 120%;
+  }
+}
+
+@mixin text-headline-2 {
+  @include en-desktop {
+    @include bold(48);
+    line-height: 120%;
+  }
+  @include en-tablet {
+    @include bold(32);
+    line-height: 120%;
+  }
+  @include en-mobile {
+    @include bold(20);
+    line-height: 120%;
+  }
+}
+
+@mixin text-headline-3 {
+  @include en-desktop {
+    @include bold(32);
+    line-height: 120%;
+  }
+  @include en-tablet {
+    @include bold(24);
+    line-height: 120%;
+  }
+  @include en-mobile {
+    @include bold(18);
+    line-height: 120%;
+  }
+}
+
+@mixin text-headline-4 {
+  @include en-desktop {
+    @include bold(24);
+    line-height: 120%;
+  }
+  @include en-tablet {
+    @include bold(18);
+    line-height: 120%;
+  }
+  @include en-mobile {
+    @include bold(17);
+    line-height: 120%;
+  }
+}
+
+@mixin text-headline-5 {
+  @include en-desktop {
+    @include bold(18);
+    line-height: 120%;
+  }
+  @include en-tablet {
+    @include bold(16);
+    line-height: 120%;
+  }
+  @include en-mobile {
+    @include bold(14);
+    line-height: 120%;
+  }
+}
+
+@mixin text-body-1 {
+  @include en-desktop {
+    @include regular(18);
+    line-height: 140%;
+  }
+  @include en-tablet {
+    @include regular(16);
+    line-height: 130%;
+  }
+  @include en-mobile {
+    @include regular(16);
+    line-height: 130%;
+  }
+}
+@mixin text-body-2 {
+  @include en-desktop {
+    @include bold(16);
+    line-height: 120%;
+  }
+  @include en-tablet {
+    @include bold(14);
+    line-height: 130%;
+  }
+  @include en-mobile {
+    @include bold(14);
+    line-height: 130%;
+  }
+}
+
+@mixin text-button-large {
+  @include regular(20);
+  line-height: 24px;
+}
+
+@mixin text-button-normal {
+  @include regular(20);
+  line-height: 24px;
+}
+
+@mixin text-button-medium {
+  @include regular(16);
+  line-height: 20px;
+}
+
+@mixin text-button-small {
+  @include regular(14);
+  line-height: 16px;
+}
+
+@mixin text-button-extra-small {
+  @include regular(14);
+  line-height: 16px;
+}
+
+@mixin text-fields-placeholder {
+  @include regular(16);
+  line-height: 24px;
+}
+
+@mixin text-fields-title {
+  @include regular(12);
+  line-height: 16px;
+}
+
+@mixin text-fields-description {
+  @include regular(12);
+  line-height: 16px;
+}
+
+/*************** add colors ***************/
+$text-darken: #000729;
+$text-darken-8: rgba($text-darken, 0.8);
+$text-darken-7: rgba($text-darken, 0.7);
+$text-darken-5: rgba($text-darken, 0.5);
+$text-darken-3: rgba($text-darken, 0.3);
+
+$data-alert: #ff7081;
+
+// grayscale
+// divider, ...
+$gray-100: #ecedf0;
+
+/*************** colors ***************/
+$core: #5c6dff;
+$navigation: #4d49f4;
+$white: #ffffff;
+$black: #161616;
+$footer: #f4f3fe;
+$text-darkgrey: #333333;
+$text-grey: #707070;
+$text-lightgrey: #888b9a;
+
+$bg-hover: rgba($core, 0.1);
+
+$cr-fields-form: #ffffff;
+$cr-fields-text: #202835;
+$cr-fields-description: #aaaaaa;
+$cr-fields-stroke-hover: #e8e6f8;
+$cr-fields-stroke-focus: #605dec;
+$cr-progress-stroke: #ebedfe;
+$cr-progress-fill: #c3c8fa;
+$bt-primary-bg-default: #5c6dff;
+$bt-primary-text-default: #ffffff;
+$bt-primary-bg-gradient: linear-gradient(270deg, #7471ff 0%, #5f94ff 100%);
+$bt-secondary-stroke-default: #5c6dff;
+$bt-secondary-stroke-hover: #5c6dff;
+$bt-secondary-stroke-disabled: #e8e8e8;
+$bt-secondary-text-default: #5c6dff;
+$bt-secondary-text-hover: #5c6dff;
+$bt-secondary-text-disabled: #888b9a;
+$bt-secondary-bg-hover: #7a87f9;
+$bt-secondary-bg-disabled: #c4c4c4;
+$bt-secondary-bg-default: #5c6dff;
+// $bt-secondary-icon-hover: #888b9a;
+$bt-secondary-etc: #f6f5ff;
+
+/*************** elevation ***************/
+@mixin elevation-1 {
+  box-shadow: 0px 4px 4px rgba(142, 141, 208, 0.16);
+}
+@mixin elevation-2 {
+  box-shadow: 0px 4px 8px rgba(142, 141, 208, 0.16);
+}
+@mixin elevation-3 {
+  box-shadow: 0px 8px 16px rgba(142, 141, 208, 0.25);
+}
+@mixin elevation-4 {
+  box-shadow: 0px 16px 24px rgba(142, 141, 208, 0.12);
+}
+@mixin elevation-5 {
+  box-shadow: 10px 30px 60px rgba(211, 210, 242, 0.4);
+}
+
+/*************** buttons ***************/
+
+@mixin button-default-1($width, $height) {
+  width: $width;
+  height: $height;
+  border-radius: 10px;
+  background: $bt-primary-bg-gradient;
+  transition: all ease-in-out 0.3s;
+  color: $bt-primary-text-default;
+  @include bold(20);
+  letter-spacing: 8% !important;
+  @include center-center;
+}
+
+@mixin button-hover-1($width, $height) {
+  @include button-default-1($width, $height);
+  transform: scale(1.05);
+  @include elevation-3;
+}
+
+@mixin button-pressed-1($width, $height) {
+  @include button-hover-1($width, $height);
+  @include elevation-1;
+}
+
+@mixin button-disabled-1($width, $height) {
+  @include button-default-1($width, $height);
+  @include elevation-1;
+  background: $bt-secondary-bg-disabled;
+}
+
+@mixin button-default-2($width, $height) {
+  @include button-default-1($width, $height);
+  background: $white;
+  border-radius: 0px;
+  border-bottom: 1px solid $bt-primary-bg-default;
+  color: $bt-primary-bg-default;
+  letter-spacing: 0;
+}
+
+@mixin button-hover-2($width, $height) {
+  @include button-default-2($width, $height);
+  @include border-set(1px, $bt-primary-bg-default, 10px);
+  @include elevation-3;
+}
+
+@mixin button-pressed-2($width, $height) {
+  @include button-hover-2($width, $height);
+  @include elevation-1;
+}
+@mixin button-disabled-2($width, $height) {
+  @include button-default-2($width, $height);
+  @include border-set(1px, $bt-secondary-stroke-disabled, 10px);
+  color: $bt-secondary-text-disabled;
+  @include elevation-1;
+}
+
+@mixin button-default-3($width, $height) {
+  @include button-default-1($width, $height);
+  background: $bt-secondary-bg-default;
+}
+
+@mixin button-hover-3($width, $height) {
+  @include button-hover-1($width, $height);
+  background: $bt-secondary-bg-hover;
+}
+
+@mixin button-pressed-3($width, $height) {
+  @include button-pressed-1($width, $height);
+  background: $bt-primary-bg-default;
+}
+
+@mixin button-disabled-3($width, $height) {
+  @include button-disabled-1($width, $height);
+  background: $bt-primary-bg-default;
+}
+
+@mixin button-default-gnb {
+  @include medium(14);
+  line-height: 40px;
+  color: $black;
+  letter-spacing: 0 !important;
+}
+
+@mixin button-default-4($width, $height) {
+  @include button-default-1($width, $height);
+  background: $white;
+  color: $core;
+  border: solid 1px $core;
+}
+
+@mixin button-hover-4($width, $height) {
+  @include button-hover-1($width, $height);
+  color: $core;
+  background: $white;
+  transform: none;
+}
+
+@mixin button-pressed-4($width, $height) {
+  @include button-pressed-1($width, $height);
+  color: $core;
+  background: $white;
+  transform: none;
+}
+
+@mixin button-disabled-4($width, $height) {
+  @include button-disabled-1($width, $height);
+  background: $bt-primary-bg-default;
+}
+
+@mixin button-hover-gnb {
+  @include button-default-gnb;
+  color: $core;
+}
+
+@mixin button-pressed-gnb {
+  @include button-default-gnb;
+  color: $core;
+}
+
+@mixin button-disabled-gnb {
+  @include button-default-gnb;
+  color: $text-lightgrey;
+}
+
+@mixin button-1($width: 240px, $height: 60px) {
+  @include button-default-1($width, $height);
+  &:hover {
+    @include button-hover-1($width, $height);
+    cursor: pointer;
+  }
+  &:active {
+    @include button-pressed-1($width, $height);
+  }
+  &.disabled {
+    @include button-disabled-1($width, $height);
+  }
+}
+
+@mixin button-2($width: 150px, $height: 50px) {
+  @include button-default-2($width, $height);
+  &:hover {
+    @include button-hover-2($width, $height);
+    cursor: pointer;
+  }
+  &:active {
+    @include button-pressed-2($width, $height);
+  }
+  &.disabled {
+    @include button-disabled-2($width, $height);
+  }
+}
+
+@mixin button-3($width: 240px, $height: 60px) {
+  @include button-default-3($width, $height);
+  &:hover {
+    @include button-hover-3($width, $height);
+    cursor: pointer;
+  }
+  &:active {
+    @include button-pressed-3($width, $height);
+  }
+  &.disabled {
+    @include button-disabled-3($width, $height);
+  }
+}
+
+@mixin button-4($width: 240px, $height: 60px) {
+  @include button-default-4($width, $height);
+  &:hover {
+    @include button-hover-4($width, $height);
+    cursor: pointer;
+  }
+  &:active {
+    @include button-pressed-4($width, $height);
+  }
+  &.disabled {
+    @include button-disabled-4($width, $height);
+  }
+}
+
+@mixin button-5($width: 240px, $height: 60px) {
+  @include button-default-3($width, $height);
+  &:hover {
+    @include button-hover-3($width, $height);
+    background-color: $navigation;
+    cursor: pointer;
+  }
+  &:active {
+    @include button-pressed-3($width, $height);
+  }
+  &.disabled {
+    @include button-disabled-3($width, $height);
+  }
+}
+
+@mixin button-gnb {
+  @include button-default-gnb;
+
+  &:hover {
+    @include button-hover-gnb;
+    cursor: pointer;
+  }
+  &:active {
+    @include button-pressed-gnb;
+  }
+  &.disabled {
+    @include button-disabled-gnb;
+  }
+}

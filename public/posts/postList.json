@@ -1,0 +1,20 @@
+[
+    {
+        "id": "20250324_vue3_markdown_blog",
+        "title": "Vue 3 + Vite 환경에서 Markdown 블로그 구축하기",
+        "date": "2025-03-24",
+        "author": "홍성호",
+        "tags": ["Vue 3", "Vite", "Markdown", "블로그"],
+        "content": "",
+        "url": "/posts/1" 
+    },
+    {
+        "id": "20250325_vue3_component_system",
+        "title": "Vue 3 컴포넌트 시스템 이해하기",
+        "date": "2025-03-25",
+        "author": "홍성호",
+        "tags": ["Vue 3", "컴포넌트", "웹 개발"],
+        "content": "",
+        "url": "/posts/1" 
+    }
+]

@@ -1,0 +1,261 @@
+// @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.stop-scroll {
+  height: 100%;
+  overflow: hidden;
+}
+
+.section {
+  &:first-child {
+    margin-top: 40px;
+    // margin-top: 76px;
+  }
+
+  @include en-tablet {
+    &:first-child {
+      margin-top: 40px;
+      // margin-top: 76px;
+    }
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+  @include en-mobile {
+    &:first-child {
+      margin-top: 20px;
+      // margin-top: 46px;
+    }
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+  .section-inner {
+    margin: 0px auto;
+    height: 100vh;
+    @include flex($dir: column);
+    @include relative;
+    z-index: 1;
+    @include container;
+    @include en-tablet {
+      height: auto;
+      padding: 120px 30px 80px;
+    }
+    @include en-mobile {
+      height: auto;
+      padding: 120px 20px 80px;
+    }
+  }
+}
+
+.hidden-en-desktop {
+  @include en-desktop {
+    display: none !important;
+  }
+}
+
+.hidden-en-tablet {
+  @include en-tablet {
+    display: none !important;
+  }
+}
+
+.hidden-en-mobile {
+  @include en-mobile {
+    display: none !important;
+  }
+}
+
+.arrow-bottom {
+  z-index: 2;
+  width: auto;
+  height: 90px;
+  padding-top: 10px;
+  animation: move-up-down 2s ease-in-out infinite;
+  @include en-desktop {
+    position: absolute;
+    left: 50%;
+    top: 86vh;
+  }
+
+  @include en-tablet {
+    position: fixed;
+    height: 50px;
+    left: 50%;
+    top: 80vh;
+    svg {
+      height: 48px;
+    }
+  }
+  @include en-mobile {
+    position: absolute;
+    height: 50px;
+    left: 50%;
+    bottom: 8vh;
+    svg {
+      height: 40px;
+    }
+  }
+}
+.button-1 {
+  @include button-1;
+}
+.button-2 {
+  @include button-2;
+}
+// .button-3 {
+//   @include button-3;
+// }
+
+.iScrollVerticalScrollbar {
+  width: 6px !important;
+}
+
+.inner-contents {
+  @include en-desktop {
+    padding-left: 60px;
+  }
+  @include en-tablet {
+    padding-left: 0px;
+    text-align: center;
+    height: fit-content;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+  @include en-mobile {
+    padding-left: 0px;
+    text-align: center;
+    height: fit-content;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+}
+
+.content-heading {
+  p {
+    @include regular(36);
+    line-height: 45px;
+    strong {
+      @include bold(36);
+      line-height: 45px;
+    }
+    span {
+      @include bold(36);
+      color: $navigation;
+      font-weight: $bold;
+    }
+  }
+  @include en-tablet {
+    width: 100%;
+    margin: 0px auto 48px;
+
+    p {
+      font-size: 24px;
+      line-height: 30px;
+      strong {
+        @include bold(24);
+        line-height: 30px;
+      }
+      span {
+        @include bold(24);
+        color: $black;
+      }
+    }
+    margin-bottom: 40px;
+  }
+  @include en-mobile {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    p {
+      font-size: 24px;
+      line-height: 30px;
+      margin: 0px auto;
+      strong {
+        @include bold(24);
+        line-height: 30px;
+      }
+      span {
+        @include bold(24);
+        color: $black;
+      }
+    }
+    margin-bottom: 36px;
+  }
+}
+
+.content-text {
+  p {
+    font-weight: $regular;
+    span {
+      font-weight: $semi-bold;
+    }
+  }
+  @include en-desktop {
+    font-size: 24px;
+    line-height: 30px;
+    p {
+      span {
+        font-weight: $semi-bold;
+        color: $black;
+      }
+    }
+  }
+  @include en-tablet {
+    margin: 0px auto;
+    width: 100%;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  @include en-mobile {
+    margin: 0px auto;
+    width: 100%;
+    font-size: 16px;
+    line-height: 20px;
+    p {
+      span {
+        font-weight: 400;
+      }
+    }
+  }
+  margin-bottom: 48px;
+}
+
+.content-phrase {
+  color: $text-lightgrey;
+  p {
+    @include regular(18);
+    span {
+      font-weight: $bold;
+    }
+  }
+  @include en-tablet {
+    p {
+      font-size: 16px;
+    }
+  }
+}
+
+.content-numbering {
+  margin: 0px auto;
+  p {
+    @include regular(20);
+    color: $text-darkgrey;
+    line-height: 24px;
+    margin-bottom: 24px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+.content-button {
+  @include button-1;
+  @include en-tablet {
+    margin: 0px auto;
+  }
+  @include en-mobile {
+    margin: 0px auto;
+  }
+}

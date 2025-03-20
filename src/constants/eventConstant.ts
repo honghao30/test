@@ -1,0 +1,8 @@
+export enum MENU_EVENT {
+  TOGGLE_TRY_POPUP = 'TOGGLE_TRY_POPUP',
+  TOGGLE_CALENDLY_POPUP = 'TOGGLE_CALENDLY_POPUP',
+}
+
+export default {
+  MENU_EVENT,
+}

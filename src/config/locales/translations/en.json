@@ -1,0 +1,430 @@
+{
+  "header": {
+    "langButton": "KOR"
+  },
+  "footer": {
+    "CEO": ["CEO", "Bongjai Shin"],
+    "address": [
+      "Address",
+      "Zenerate, 3F, 27, Dongil-ro 147-gil, Seoul, Republic of Korea"
+    ],
+    "question": ["Contact", "help@zenerate.ai"]
+  },
+  "module": {
+    "column": {
+      "caption": "Column",
+      "title": ["Interview", "Architecture and Society No.33"],
+      "contents": [
+        "CEO Bongjai Shin discusses the latest design automation trends in an interview with Architecture & Society. Bongjai shares his views on the ways in which these trends will change not only building designs but also the role of architects."
+      ],
+      "insight": "Insights"
+    },
+    "explanation": {
+      "mainSlogan-1": "Zenerate all possibilities of ",
+      "colorSlogan": "building design",
+      "mainSlogan-2": " to maximize your success",
+      "services": {
+        "summary": "In Spring 2020, architectural designer Bongjai Shin and Ph.D. in mathematics and A.I. developer Gahye Jeong co-founded their firm, Zenerate Inc., secured their seed funding from three venture capital firms, offering building design AI services to the Korea and US markets. They are pioneering a new path in the real estate development industry with unprecedented ways of transforming building design problems to mathematics and algorithm problems.",
+        "caption": "Consulting Service",
+        "types": {
+          "web": "Web Service",
+          "consulting": "Consulting Service"
+        },
+        "title": ["Client meeting", "Processing", "Delivery"],
+        "content": [
+          "Data collection: Project Objectives, Legal Constraints, Building Plans, Rent/Home Price Data, Construction Cost, etc.",
+          "Generate millions of options to find the most profitable one satisfying various conditions.",
+          "Provide various analysis by data sheets and web solution."
+        ]
+      }
+    },
+    "fold": {
+      "company": {
+        "category": "Our Company",
+        "headers": {
+          "intro": "About",
+          "timeline": "Timeline",
+          "team": "Team"
+        },
+        "contents": {
+          "intro": {
+            "title": ["Our Vision"],
+            "contents": [
+              "In the era of artificial intelligence, how much more profit can we make if we use it for real estate development?",
+              "Zenerate began with this question.",
+              "We're pioneering a new path in the real estate development industry with unprecedented ways of transforming building design problems to mathematics and algorithm problems.",
+              "Our building design AI solution will generate and analyze various scenarios to contribute to your real estate development business with the most profitable alternative.",
+              "",
+              ""
+            ],
+            "subtitle": "Innovation, Challenge and Unite"
+          },
+          "timeline": {
+            "date": [
+              "2022. 10",
+              "2022. 06",
+              "2022. 03",
+              "2021. 12",
+              "2021. 03",
+              "2020. 12",
+              "2020. 11",
+              "2020. 10",
+              "2020. 09",
+              "2020. 08",
+              "2020. 07"
+            ],
+            "contents": [
+              "Selected for Korea AI Startup 100",
+              "Attracted  investment from NeoValue",
+              "Attracted 4 billion investment",
+              "Shinhan Futures Lab, 'Proptech Gaming Tinger' Grand Prize",
+              "Selected for Startup Voucher",
+              "Selected for IBK Changong Mapo 6th Batch",
+              "3rd Prizer Innovative Tech Competiton",
+              "TIPS R&D Funding",
+              "Rookie League Startups at Comeup 2020",
+              "Data Voucher Prizer by K-Data",
+              "3rd Prizer at LH Public Data Startup Competiton"
+            ]
+          },
+          "team": {
+            "desc": [
+              "Our Team",
+              "Product Team",
+              "SW Development Team",
+              "Marketing Team"
+            ],
+            "work": [
+              "",
+              "Architectural Designer Computational Designer",
+              "AI Developer, Back-end Developer, Front-end Developer",
+              "Marketer & Graphic designer"
+            ]
+          }
+        }
+      },
+      "news": {
+        "category": "News",
+        "headers": {
+          "1": "1",
+          "2": "2",
+          "3": "3"
+        },
+        "contents": {
+          "1": {
+            "title": ["Selected for Korea AI Startup 100"],
+            "date": ["19 Oct 2022"],
+            "contents": [
+              "Zenerate was selected as Korea AI Startup 100 hosted by Korea Economic Daily and AI One Team. In the field of prop-tech, Zenerate was the only winner."
+            ]
+          },
+          "2": {
+            "title": ["Attracted 4 billion investment"],
+            "date": ["03 Mar 2022"],
+            "contents": [
+              "According to the investment banking (IB) industry, DSN Investment, SL Investment, Daekyo Investment, and Asia F&I (Asia F&I) participated as investors (LPs) in Zenerate's recent 4 billion won pre-series A investment."
+            ]
+          },
+          "3": {
+            "title": [
+              "Shinhan Futures Lab, 'Proptech Gaming Tinger' Grand Prize"
+            ],
+            "date": ["15 Dec 2021"],
+            "contents": [
+              "Zenerate participated in 'Proptech Game Changer', an event jointly hosted by Shinhan Futures Lab and Asia FnI. This event was held to discover startups with high growth potential as unicorns in the Proptech field. Zenerate received the grand prize out of a total of 140 startup applicants."
+            ]
+          }
+        }
+      },
+      "program": {
+        "category": "Program",
+        "headers": {
+          "consulting": "Consulting Service",
+          "websolution": "Web Solution"
+        },
+        "contents": {
+          "consulting": {
+            "title": ["AAA"],
+            "subtitle": ["Building Design AI Solution", "Revenue Estimation"],
+            "contents": [
+              "Providing alternatives considering site, massing, floor height, view, etc., and maximize profits of the client’s project.",
+              "Based on actual transaction data, our AI model learns how the price is decided in relation to area, floor, height, view, etc."
+            ]
+          },
+          "websolution": {
+            "title": ["AAA"],
+            "subtitle": ["Feasibility Study"],
+            "contents": [
+              "By providing millions of building design alternatives with algorithms, users can easily example profitability of their projects."
+            ]
+          }
+        }
+      },
+      "contact": {
+        "category": "Contact",
+        "headers": {
+          "contact": "Contact us"
+        },
+        "contents": {
+          "contact": {
+            "title": ["Feel Free to", "Contact Us!"],
+            "contents": [
+              "Do you have any questions about us?",
+              "Please feel free to contact me."
+            ],
+            "button": "Contact"
+          }
+        }
+      }
+    },
+    "monthlyZenerate": {
+      "title": {
+        "desktop": "Monthly Zenerate",
+        "mobile": "Monthly Zenerate"
+      },
+      "caption": "Newsletter",
+      "contents": [
+        "Subscribe to receive exclusive contents",
+        "about real estate development insights",
+        "and our latest news!"
+      ],
+      "subscription": "Subscribe!"
+    },
+    "news": {
+      "caption": "News",
+      "date": [
+        "Dec 18 2020",
+        "Dec 18 2020",
+        "Dec 18 2020",
+        "Dec 18 2020",
+        "Dec 18 2020",
+        "Dec 18 2020",
+        "Dec 18 2020",
+        "Dec 18 2020",
+        "Dec 18 2020",
+        "Dec 18 2020"
+      ],
+      "contents": [
+        "Selected for IBK Changong Mapo 6th Batch.",
+        "Selected for IBK Changong Mapo 6th Batch.",
+        "Selected for IBK Changong Mapo 6th Batch.",
+        "Selected for IBK Changong Mapo 6th Batch.",
+        "Selected for IBK Changong Mapo 6th Batch.",
+        "Selected for IBK Changong Mapo 6th Batch.",
+        "Selected for IBK Changong Mapo 6th Batch.",
+        "Selected for IBK Changong Mapo 6th Batch.",
+        "Selected for IBK Changong Mapo 6th Batch.",
+        "Selected for IBK Changong Mapo 6th Batch."
+      ]
+    },
+    "partnership": {
+      "title": "Become our partner",
+      "caption": "Inquiries",
+      "contents": [
+        "We have partnered with various firms; real estate developers, investment firms, design firms and general contractors."
+      ]
+    },
+    "program": {
+      "title": "How to use our service",
+      "caption": "Our Solutions",
+      "contents": [
+        "We provide AI-based building design solutions for real estate development. Depending on client’s needs, we can deliver various alternatives including the most efficient, profitable and/or cost-effective ones.",
+        "By exploring all possible design alternatives with algorithms, we maximize profits of your  development project."
+      ]
+    },
+    "team": {
+      "caption": "Our Team",
+      "contents": [
+        "In Spring 2020, architectural designer Bongjai Shin and Ph.D. in mathematics and A.I. developer Gahye Jeong co-founded Zenerate."
+      ]
+    },
+    "solution": {
+      "title": "What makes Zenerate unique?",
+      "contents": [
+        "Zenerate provides all possible design alternatives considering site, massing, floor height, view, and more, to maximize profits for you."
+      ]
+    },
+    "career": {
+      "caption": "Zenerate Careers",
+      "title": "We are creating a new way of construction design",
+      "contents": [
+        "제너레잇은 최첨단 기술로 기존 업계를 혁신하기 위해 열정적으로 고민하고 연구합니다. 제너레잇팀이 발견해가는 새로움의 순간들을 여러분과 함께하고 싶습니다. 지금 제너레잇에 지원하세요!"
+      ],
+      "button": "Go to find your role!"
+    }
+  },
+  "main": {
+    "service": {
+      "title": [
+        "차별화된 제너레잇의 AI 솔루션",
+        "Building Design AI Solutions",
+        "Early Stage Planning Tool"
+      ],
+      "types": {
+        "web": "Web Solution",
+        "consulting": "Consulting Service"
+      },
+      "chip": {
+        "web": "Web Solution",
+        "consulting": "Consulting"
+      },
+      "content": [
+        "By providing millions of building design alternatives with algorithms,",
+        "users can easily examine profitability of their projects.",
+        "",
+        "Zenerate provides all possible design alternatives considering site, massing, floor height, view, etc., and maximize profits of the client’s project.",
+        "Based on actual transaction data,  our A.I. model learns how the price is decided in relation to  area, floor, height, view, etc.. Then, it will price every single space properly in a new project."
+      ],
+      "titles": [
+        "Feasibility Study",
+        "Building Design AI Solutions",
+        "Revenue Estimation"
+      ],
+      "contents": [
+        "By providing millions of building design alternatives with algorithms, users can easily examine profitability of their projects.",
+        "Zenerate provides all possible design alternatives considering site, massing, floor height, view, etc., and maximize profits of the client’s project.",
+        "Based on actual transaction data,  our A.I. model learns how the price is decided in relation to  area, floor, height, view, etc.. Then, it will price every single space properly in a new project."
+      ]
+    },
+    "contact": {
+      "title": ["Feel Free to", "Contact Us!"],
+      "form": {
+        "company": "Company",
+        "name": "Name",
+        "email": "Email",
+        "purpose": "Purpose",
+        "message": "Message",
+        "send": "Send",
+        "sent": "Your inquery has been submitted. Thank you",
+        "dropdown": {
+          "business": "Business",
+          "marketing": "Marketing",
+          "research": "Research",
+          "career": "Career",
+          "inquery": "Feedback"
+        }
+      }
+    },
+    "news": {
+      "title": ["Zenerate", "Newsroom"],
+      "link": "Links"
+    },
+    "team": {
+      "title": "Zenerate Team",
+      "menu": {
+        "zenerate": "Zenerate",
+        "product": "Product",
+        "it": "SW Development"
+      },
+      "name": {
+        "sbj": "Bongjai Shin",
+        "jgh": "Gahye Jeong",
+        "lh": "Hak Lee",
+        "kyj": "Yeonjae Kang",
+        "ysh": "Sang-Hoon Yu",
+        "obg": "Beomgyo Oh",
+        "kdh": "Daehong Kim",
+        "bsh": "Suhyun Bae",
+        "ngsa": "Suna Namgung",
+        "psj": "Sangjun Park"
+      },
+      "job": {
+        "sbj": "CEO, Architectural Designer",
+        "jgh": "CTO, AI Developer",
+        "lh": "Software Engineer",
+        "kyj": "Architectural Designer",
+        "ysh": "AI Developer",
+        "obg": "Web Developer",
+        "kdh": "Computational Designer",
+        "bsh": "Backend Engineer",
+        "ngsa": "Web Developer",
+        "psj": "Computational Designer"
+      },
+      "comment": {
+        "sbj": "It all depends on how we look at it",
+        "jgh": "Focus on signal over noise",
+        "lh": "git push --force origin HEAD",
+        "kyj": "Expansion through integration",
+        "ysh": "Likes: dogs, math and Python",
+        "obg": "From Inspiration to Realization",
+        "kdh": "Manuscripts don't burn",
+        "bsh": "Divide and conquer",
+        "ngsa": "Clear and Concise",
+        "psj": "Step by step"
+      }
+    }
+  },
+  "menu": {
+    "ourCompany": "Our Company",
+    "news": "News",
+    "service": "Services",
+    "contact": "Contact",
+    "intro": "Introduction",
+    "timeline": "Timeline",
+    "team": "Team",
+    "career": "Careers"
+  },
+  "about": {
+    "allPossibilities": "We generate all possibilities.",
+    "comment": [
+      "By converting design issues into mathematical and algorithmic problems,",
+      "Zenerate finds the most optimized, profitable solution for you.",
+      ""
+    ],
+    "mission": {
+      "title": "We believe there is a better, more profitable way to approach real estate development to improve decision-making for developers and stakeholders.",
+      "content": [
+        "Lack of an integrated analysis of design and profitability",
+        "",
+        "Optimal design",
+        "using AI technology",
+        "Limitations in",
+        "finding the best ROI",
+        "Maximized development",
+        "returns from 3% to 25%",
+        "Sales projections without differentiated space variables",
+        "",
+        "Accurate alternatives",
+        "derived from cross-data analysis"
+      ]
+    },
+    "tech": {
+      "title": "Zenerate's AI solution examines the profitability of real estate projects",
+      "content": [
+        {
+          "caption": "Consulting Service",
+          "title": "Quick & easy early stage planning feasibility test",
+          "content": "We produce various building design alternatives suitable for the site using our technology."
+        },
+        {
+          "caption": "Consulting Service",
+          "title": "Building design with a maximized revenue model",
+          "content": "We provide all possible design alternatives considering site, massing, floor height, view, and more."
+        },
+        {
+          "caption": "Web Solution",
+          "title": "Sales Price Forecasting",
+          "content": "Based on actual transaction price data, we predict the appropriate sales price by considering the area, floor height, view, building type, etc."
+        }
+      ]
+    },
+    "partner": {
+      "title": ["Zenerate's Partners", "", ""],
+      "content": [
+        "We have partnered with top-tier firms; real estate developers, investment firms, design firms and general contractors.",
+        "Companies",
+        "Investors"
+      ]
+    },
+    "timeline": {
+      "title": ["Zenerate is leading ", "the way", "in generative design"]
+    }
+  },
+  "newsletter": {
+    "title": "Sign up to subscribe Zenerate Newsletter!",
+    "submit": "Subscribe",
+    "email": "email agree",
+    "description": "description",
+    "confirm": "confirm"
+  }
+}
