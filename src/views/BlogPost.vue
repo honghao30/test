@@ -38,8 +38,9 @@ const post = ref(null);
 
 const fetchPost = async () => {
   try {
-    const response = await fetch("/posts.json");
+    const response = await fetch("/posts/postList.json");
     const posts = await response.json();
+    console.log(response)
 
     post.value = posts.find((p: any) => String(p.id) === String(postId.value));
 

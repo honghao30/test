@@ -14,7 +14,7 @@
       blog list
       <ul>
           <li v-for="post in posts" :key="post.id">
-            <router-link :to="`/post/${post.id}`">
+            <router-link :to="`/posts/${post.id}`">
               {{ post.title }} - {{ post.date }}
             </router-link>
           </li>

@@ -5,7 +5,7 @@
         "date": "2025-03-24",
         "author": "홍성호",
         "tags": ["Vue 3", "Vite", "Markdown", "블로그"],
-        "content": "",
+        "content": "20250318_post001.md",
         "url": "/posts/1" 
     },
     {
@@ -14,7 +14,7 @@
         "date": "2025-03-25",
         "author": "홍성호",
         "tags": ["Vue 3", "컴포넌트", "웹 개발"],
-        "content": "",
+        "content": "20250318_post001.md",
         "url": "/posts/1" 
     }
 ]
